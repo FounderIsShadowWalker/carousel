@@ -151,7 +151,7 @@
 
 相比传统的无缝轮播,拿rect的思路改写后，代码可读性变的更高，思路更加清晰，同时代码也变得更少，更容易维护。
 
-##官方的react-motion
+## 官方的react-motion
 当然最终的react动画方案必须是react-motion了，motion提供了各种动画参数，动画做的异常逼真，自己也按照react-motion的API，实现了一版react-motion的无缝轮播，效果如下。
 
 <img src="http://oymaq4uai.bkt.clouddn.com/carousel.gif"/>
@@ -160,7 +160,7 @@
 
 [github 地址](https://github.com/FounderIsShadowWalker/carousel)
 
-##一点总结
+## 一点总结
 现在来看动画，觉得动画都是渐进，有规律的，通过操作元素从一个位置瞬间移动到另一个位置，个人觉得是违背了动画的理念的，因为从一个位置瞬时的改变到另一个点，这样是无法描述(或者说不符合动画的语义化)，可以参照我们之前用传统方法实现的轮播。
 现在我们来写动画，我们应该先把动画的状态的描述出来，然后描述把动画的起始态和结束态，这样的动画才是规律的。
 
